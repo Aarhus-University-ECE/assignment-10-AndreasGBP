@@ -49,7 +49,7 @@ node *map(node *p, fn_int_to_int f) {
   if(p == NULL) //Base case
     return 0;
   return make_node(f(p->value), map(p->next,f)); 
-  //recursive step, it creates a new linked list using the make_node function and maps the values of p with the function f
+  //Recursive step: It creates a new linked list using the make_node function, and maps the values of "p" with the function "f"
 
 }
 
